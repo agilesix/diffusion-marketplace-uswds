@@ -1,5 +1,6 @@
 {
   "name": "@uswds/uswds",
+  "private": true,
   "version": "3.3.0",
   "description": "Open source UI components and visual style guide for U.S. government websites",
   "engines": {
