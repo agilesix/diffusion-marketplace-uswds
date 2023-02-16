@@ -35,9 +35,7 @@ let nonNavElements;
 
 const isActive = () => document.body.classList.contains(ACTIVE_CLASS);
 const SCROLLBAR_WIDTH = ScrollBarWidth();
-const INITIAL_PADDING = window
-  .getComputedStyle(document.body)
-  .getPropertyValue("padding-right");
+const INITIAL_PADDING = document.body !== null ? window.getComputedStyle(document.body).getPropertyValue("padding-right") : '0';
 const TEMPORARY_PADDING = `${
   parseInt(INITIAL_PADDING.replace(/px/, ""), 10) +
   parseInt(SCROLLBAR_WIDTH.replace(/px/, ""), 10)
